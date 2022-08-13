@@ -1,11 +1,40 @@
-// TODO: Create a function to write README file
-const fs = require("fs");
+function generateReadme(answers) {
+  return `
+  <h1 align="center">${answers.title}</h1>
+  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 
-function writeFile(path, content) {
-  // TODO: Create a file in the output folder
-  console.log("I did something");
+  ## Description
+  ${answers.description}
+
+  ## Table of Contents
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
+
+  ## Installation 
+  ${answers.installation}
+
+  ## Usage 
+  ${answers.usage}
+
+  ## License 
+  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+  <br />
+  This application is protected by the ${answers.license} license.
+
+  ## Contributors
+  ${answers.contributors}
+
+  ## Tests
+  ${answers.tests}
+
+  ## Questions
+  ${answers.username} <br />
+  ${answers.email}`;
 }
 
-module.exports = {
-  writeFile,
-};
+module.exports = generateReadme;
