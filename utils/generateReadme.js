@@ -33,8 +33,8 @@ function generateReadme(answers) {
   ${answers.tests}
 
   ## Questions
-  ${answers.username} <br />
-  ${answers.email}`;
+  Github Username: ${answers.username} <br />
+  Email: ${answers.email}`;
 }
 
 module.exports = generateReadme;
