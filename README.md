@@ -19,6 +19,8 @@ To run my application you need to run the npm package of node by using npm insta
 
 ## Usage
 
+You can find a video of the application [here](https://drive.google.com/file/d/1sZ_INH3Glm9ndtrizcsUHPDmmkdzh8an/view?usp=sharing)
+
 ![User prompt answers Screenshot](./assets/images/User%20Prompt%20Screen%20Shot.png)
 
 ## Credits
